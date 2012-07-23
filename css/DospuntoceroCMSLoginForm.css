@@ -1,0 +1,162 @@
+/* @override http://cruzmedica/dospuntoceroCMSCore/css/DospuntoceroCMSLoginForm.css */
+
+/* @group clearfix */
+
+.cf:after, .container:after,.Actions:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+.cf, .container,.Actions {
+	display: inline-block;
+}
+
+* html .cf, * html .container, * html .Actions {
+	height: 1%;
+}
+
+.cf, .container {
+	display: block;
+}
+
+.clear {
+	clear: both;
+}
+
+/* @end */
+
+/* @group newLogin */
+html{
+	background: none #e5e0e8;
+	font-family: arial;
+
+}
+.dospuntoceroLogin{
+	height: auto;
+}
+
+
+.dospuntoceroLogin .form {
+	width: 314px;
+	margin: 120px auto 0 auto ;
+	border-top: 1px solid #aaa;
+	border-left: 1px solid #aaa;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	padding: 60px 40px 40px;	
+	opacity: .95;
+	background: #fff;
+	shadow: #000000 2px 2px 2px;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;		
+	background: #fff url(../images/dospuntocero.png) no-repeat 40px 20px;
+	
+	-webkit-transition : all .6s ease-in-out;	
+	-moz-transition : all 0.6s ease-in-out;  	
+	
+	color: #222;
+	
+}
+.dospuntoceroLogin .form:hover {
+	box-shadow : 0 0 10px rgba(0,0,0,.5);
+	-moz-box-shadow : 0 0 10px rgba(0,0,0,.5);
+	-webkit-box-shadow : 0 0 10px rgba(0,0,0,.5);
+}
+.dospuntoceroLogin .form .field{
+	padding: 10px 0;
+}
+.dospuntoceroLogin .form input{
+	width: 300px;
+	border: 1px solid #aaa;
+	padding: 6px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;	
+	
+}
+.dospuntoceroLogin p{
+	margin: 0;
+}
+.dospuntoceroLogin .form fieldset {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+.dospuntoceroLogin .form label.right{
+	font-size: 12px;	
+}
+
+.dospuntoceroLogin #Remember.field.checkbox {
+	padding: 0;
+}
+.dospuntoceroLogin #Remember input{
+	width: 12px;
+}
+.dospuntoceroLogin .form .Actions {
+	padding: 0;
+	margin-top: 20px;
+	width: 100%;
+}
+
+.dospuntoceroLogin #ForgotPassword{
+	float: left;
+	padding: 0;
+	height: 27px;
+	margin: 0;
+}
+.dospuntoceroLogin .Actions input{
+	float: left;
+	width: auto;
+	cursor: pointer;
+	color: #333;
+	overflow: visible;
+	width: auto;
+	border-radius: 1.6em;
+	border: none;
+	margin-right: 10px;
+	font-size: 11px;
+	display: inline-block;
+	padding: 5px 10px 6px;
+	text-decoration: none;
+	font-weight: bold;
+	line-height: 1;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-bottom: 1px solid #aaa;
+	position: relative;
+	cursor: pointer;
+	background-image: -moz-linear-gradient(100% 100% 90deg, #eee, #ccc);
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#eee), to(#ccc));
+}
+
+.dospuntoceroLogin .Actions input:hover{
+	background: #e5e0e8;
+	cursor: pointer;
+}
+.dospuntoceroLogin #ForgotPassword a {
+	font-size: 10px;
+	line-height: 30px;
+	text-decoration: none;
+	color: #555;
+}
+.dospuntoceroLogin #ForgotPassword a:hover {
+	text-decoration: underline;
+}
+
+
+
+
+/* @end */
+
+.dospuntoceroLogin p.checkbox input{
+	width: 16px;
+	float: left;
+}
+.dospuntoceroLogin .file input{
+	border: none;
+	padding: 0;
+}
+

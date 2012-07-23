@@ -1,0 +1,63 @@
+/* @override 
+	http://imprimir/dospuntoceroCMSCore/css/dospuntoceroCMSNavigator.css
+*/
+
+#CN_ShowHide {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	display: block;
+	width: 35px;
+	z-index: 99;
+	cursor: pointer;
+	background: #474855 url("../images/top-bg.gif") repeat-x 0 0;
+	height: 50px;
+}
+
+#CN_ShowHide img {
+	margin: 5px;
+}
+
+#CN_CompactNavigator {
+	text-align: left;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	background: #474855 url("../images/top-bg.gif") repeat-x 0 0;
+	width: 100%;
+	padding: 4px 0 0 20px;
+	height: 20px;
+}
+
+#CN_CompactNavigator p,
+#CN_CompactNavigator li {
+	color: #fff;
+	font-size: 8pt;
+	float: left;
+	margin: 0 10px;
+}
+#CN_CompactNavigator a {
+	color: #ccc;
+	text-decoration: none;
+}
+#CN_CompactNavigator a:hover {
+	color: #fff;
+}
+
+#CN_CompactNavigator #CN_PageType {
+	font-weight: bold;
+	font-size: 10pt;
+	margin: 0 0 1.5em 0;
+}
+
+#CN_CompactNavigator #CN_SwitchView {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+#CN_CompactNavigator #CN_Credentials {
+	position: absolute;
+	right: 0;
+	width: 250px;
+}

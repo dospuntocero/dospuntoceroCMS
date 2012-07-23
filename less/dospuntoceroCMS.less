@@ -1,0 +1,2970 @@
+/* @override 
+	http://pcm/dospuntoceroCMSCore/css/DospuntoceroCMS.css
+	http://tienda/dospuntoceroCMSCore/css/DospuntoceroCMS.css
+*/
+
+/* @group reset ordeca */
+
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+	height: 100%;
+	overflow: hidden;
+	background: none #e5e0e8;
+	font-family: arial;
+}
+
+body {
+	height: 100%;
+	font-family: "Lucida Grande",Tahoma, Arial, sans-serif;
+	font-size: 11px;
+}
+
+/* @end */
+
+/* @group tinymce */
+
+body.mceForceColors {
+	background: #FFF;
+	color: #000;
+}
+
+h1 {
+	font-size: 2em
+}
+
+h2 {
+	font-size: 1.5em
+}
+
+h3 {
+	font-size: 1.17em
+}
+
+h4 {
+	font-size: 1em
+}
+
+h5 {
+	font-size: .83em
+}
+
+h6 {
+	font-size: .75em
+}
+
+.mceItemTable, .mceItemTable td, .mceItemTable th, .mceItemTable caption, .mceItemVisualAid {
+	border: 1px dashed #BBB;
+}
+
+a.mceItemAnchor {
+	width: 12px;
+	line-height: 6px;
+	overflow: hidden;
+	padding-left: 12px;
+	background: url(img/items.gif) no-repeat bottom left;
+}
+
+img.mceItemAnchor {
+	width: 12px;
+	height: 12px;
+	background: url(img/items.gif) no-repeat;
+}
+
+img {
+	border: 0;
+}
+
+table {
+	cursor: default;
+}
+
+table td, table th {
+	cursor: text
+}
+
+ins {
+	border-bottom: 1px solid green;
+	text-decoration: none;
+	color: green
+}
+
+del {
+	color: red;
+	text-decoration: line-through
+}
+
+cite {
+	border-bottom: 1px dashed blue
+}
+
+acronym {
+	border-bottom: 1px dotted #CCC;
+	cursor: help
+}
+
+abbr, html\:abbr {
+	border-bottom: 1px dashed #CCC;
+	cursor: help
+}
+
+fieldset {
+	border: none;
+}
+
+/* @end */
+
+/* @group silverstripe tree */
+
+div.TreeDropdownField {
+	padding: 0;
+}
+
+html>body div.TreeDropdownField {
+	position: relative;
+}
+
+div.TreeDropdownField {
+	font-size: 12px;
+	height: 21px;
+}
+
+div.TreeDropdownField span.items {
+	height: 15px;
+	border: 1px #7f9db9 solid;
+	cursor: pointer;
+	float: left;
+	padding: 2px 0 2.5px 4px;
+	background-color: #fff;
+	margin: 0;
+	font-size: 12px;
+	overflow: hidden;
+	width: 306px;
+}
+
+div.TreeDropdownField div.tree_holder {
+	clear: left;
+	cursor: default;
+	border: 1px black solid;
+	margin: 0;
+	height: 200px;
+	overflow: auto;
+	background-color: #fff;
+}
+
+div.TreeDropdownField div.tree_holder ul.tree a {
+	font-size: 12px;
+}
+
+div.TreeDropdownField div.tree_holder ul.tree {
+	margin-top: 0;
+}
+
+html>body div.TreeDropdownField div.tree_holder {
+	top: 20px;
+	left: 0px;
+	z-index: 1000;
+}
+
+div.TreeDropdownField a.editLink {
+	border: none;
+	text-decoration: none;
+	background: url(../../sapphire/images/TreeDropdownField_button.gif) no-repeat left top;
+	width: 19px;
+	height: 21px;
+	margin: 0;
+	padding: 0 0 0 1px;
+	z-index: 0;
+	overflow: hidden;
+	float: right;
+}
+
+/*
+ * Default CSS for tree-view
+ */
+
+ul.tree {
+	width: auto;
+	padding-left: 0;
+	margin-left: 0;
+}
+
+ul.tree img {
+	border: none;
+}
+
+ul.tree, ul.tree ul {
+	padding-left: 0;
+}
+
+ul.tree ul {
+	margin-left: 16px;
+}
+
+ul.tree li {
+	list-style: none;
+	background: url(images/i-repeater.gif) repeat-y 0;
+	display: block;
+	width: auto;
+}
+
+ul.tree li.last {
+	list-style: none;
+	background-image: none;
+}
+
+/* Span-A: I/L/I glpyhs */
+
+ul.tree span.a {
+	background: url(images/t.gif) no-repeat 0 50%;
+	display: block;
+}
+
+ul.tree .a.last {
+	background: url(images/l.gif) no-repeat 0 50%;
+}
+
+/* Span-B: Plus/Minus icon */
+
+ul.tree span.b {
+	
+}
+
+ul.tree span.a.children span.b {
+	display: inline-block;
+	background: url(images/minus.gif) no-repeat 0 50%;
+	cursor: pointer;
+}
+
+ul.tree li.closed span.a span.b, ul.tree span.a.unexpanded span.b {
+	display: inline-block;
+	background: url(images/plus.gif) no-repeat 0 50%;
+	cursor: pointer;
+}
+
+/* Span-C: Spacing and extending tree line below the icon */
+
+ul.tree span.c {
+	margin-left: 16px;
+}
+
+ul.tree span.a.children span.c, ul.tree span.a.spanClosed span.c {
+	background: url(images/i-bottom.gif) no-repeat 0 50%;
+}
+
+ul.tree span.a.spanClosed span.c, ul.tree span.a.unexpanded span.c {
+	background-image: none;
+}
+
+/* Anchor tag: Page icon */
+
+ul.tree span.c {
+	white-space: nowrap;
+}
+
+ul.tree a {
+	display: inline-block;
+	white-space: pre;
+	overflow: hidden;
+	padding: 3px 0 1px 19px;
+	line-height: 16px;
+	background: url(images/page-file.png) no-repeat 0 50%;
+	background-position: 0 50% !important;
+	text-decoration: none;
+	outline: none;
+	font-size: 11px;
+}
+
+ul.tree a * {
+	font-size: 11px;
+}
+
+ul.tree a:hover {
+	text-decoration: underline;
+}
+
+ul.tree span.a.spanClosed a, ul.tree span.a.Folder a {
+	background-image: url(images/page-closedfolder.png);
+}
+
+ul.tree span.a.children a {
+	background-image: url(images/page-openfolder.png);
+}
+
+/* Unformatted tree */
+
+ul.tree.unformatted li {
+	background-image: none;
+	padding-left: 16px;
+}
+
+ul.tree.unformatted li li {
+	background-image: none;
+	padding-left: 0;
+}
+
+/*
+	Hover / Link tags
+*/
+
+ul.tree a:hover {
+	text-decoration: none;
+}
+
+ul.tree span.a {
+	cursor: pointer;
+}
+
+/*
+ * Divs, by default store vertically aligned data
+ */
+
+/* As inside DIVs should be treated normally */
+
+ul.tree div a {
+	padding: 0;
+	background-image: none;
+	min-height: 0;
+	height: auto;
+}
+
+ul.tree li a:link,
+ul.tree li a:hover,
+ul.tree li a:visited {
+	color: #111;
+}
+
+/*
+ * Drag and drop styling
+ */
+
+ul.tree div.droppable {
+	float: none;
+	margin: -7px 0px -7px 16px;
+	height: 10px;
+	font-size: 1px;
+	z-index: 1000;
+}
+
+html > body ul.tree div.droppable {
+	margin: -5px 0px -5px 16px;
+}
+
+ul.tree div.droppable.dragOver {
+	background: url(images/insertBetween.gif) no-repeat 50% 0;
+}
+
+ul.tree a.dragOver, ul.tree li.dragOver a, ul.tree li.dragOver li.dragOver a {
+	border: 3px solid #0074C6;
+	margin: -3px;
+}
+
+ul.tree li.dragOver li a {
+	border-style: none;
+	margin: 0;
+}
+
+/**
+ * Multiselect
+ */
+
+ul.tree span.a.current {
+	font-weight: bold;
+	border-top: 1px #CCCCFF solid;
+	border-bottom: 1px #CCCCFF solid;
+	margin-left: -100px;
+	padding-left: 100px;
+	background: #fff url(../images/cmsbg.png) 100px 50%;
+}
+
+ul.tree span.a.loading span.b span.c a {
+	background-image: url(../../../cms/images/network-save.gif) !important;
+	margin-left: -3px;
+	padding-left: 21px;
+	background-position: 2px 2px;
+}
+
+ul.tree.multiselect span.a span.b a {
+	background-image: url(../../../cms/images/tickbox-unticked.gif) !important;
+}
+
+ul.tree.multiselect span.a.nodelete span.b a {
+	background-image: url(../../../cms/images/tickbox-canttick.gif) !important;
+}
+
+ul.tree.multiselect span.a.treeloading span.b a {
+	background-image: url(../../../cms/images/tickbox-greyedout.gif) !important;
+}
+
+ul.tree.multiselect span.a.failed span.b a {
+	background-image: url(../../../cms/images/tickbox-fail.gif) !important;
+}
+
+ul.tree.multiselect span.a.selected span.b span.c a {
+	background-image: url(../../../cms/images/tickbox-ticked.gif) !important;
+}
+
+/* Span-B: Plus/Minus icon */
+
+ul.tree.multiselect li.selected span.a.children span.b, 
+ul.tree.multiselect li.selected span.a.unexpanded span.b {
+	background-image: none;
+	cursor: default;
+}
+
+/* @end */
+
+/**
+ * Actions/Buttons
+ */
+
+
+.ajaxActions {
+	overflow: auto;
+	height: 35px;
+	padding: 0 10px 10px;
+	margin-top: 7px;
+}
+
+input#Form_EditForm_action_delete.action.delete,
+input#Form_EditForm_action_unpublish.action.delete {
+	background: none !important;
+	border: none;
+	box-shadow: 0px 0px 0px #555;
+	-webkit-box-shadow: 0px 0px 0px #555;
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	color: #555;
+}
+
+input:hover#Form_EditForm_action_unpublish.action.delete {
+	color: #000;
+}
+
+input:hover#Form_EditForm_action_delete.action.delete {
+	color: red;
+}
+
+#Form_EditForm_action_publish {
+	background: #00b74a;
+	color: #fff;
+	border: 1px solid #666;
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#00b74a), to(#008a38));
+}
+
+input#Form_EditForm_action_save.action {
+	background: #00aed6;
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#00aed6), to(#008ec1));
+	color: #fff;
+	border: 1px solid #666;
+}
+
+div.fieldgroup div.fieldgroupField div.fieldgroupField {
+	float: left;
+	margin: 10px;
+}
+
+div.middleColumn div.fieldgroup div.fieldgroupField select,
+div.fieldgroup div.fieldgroupField div.fieldgroupField select {
+	width: 200px;
+}
+
+div.middleColumn div.fieldgroup div.fieldgroupField label ,
+div.fieldgroup div.fieldgroupField div.fieldgroupField label {
+	width: 100px;
+	float: left;
+}
+
+#TreeActions {
+	float: left;
+	width: 100%;
+}
+
+#TreeActions li {
+	float: left;
+	margin-left: 5px;
+	margin-bottom: 11px;
+}
+
+#TreeActions button.disabled {
+	color: #aaa;
+}
+
+.TableListField div.utility a ,
+.ajaxActions input,
+.actions input,
+button.action,
+div.Actions input,
+input.action,
+li.action input,
+li.action button {
+	cursor: pointer;
+	color: #333;
+	overflow: visible;
+	width: auto;
+	border: none;
+	margin-right: 7px;
+	font-size: 11px;
+	display: inline-block;
+	padding: 6px;
+	text-decoration: none;
+	font-weight: bold;
+	line-height: 1;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-bottom: 1px solid #aaa;
+	position: relative;
+	cursor: pointer;
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#ccc));
+	box-shadow: 0px 3px 6px #aaa;
+	-webkit-box-shadow: 0px 3px 6px #aaa;
+}
+
+#Form_EditForm {
+	min-width: 700px;
+	overflow: auto !important;
+}
+
+.ajaxActions input,
+	#TreeActions li.action input {
+	float: left;
+	height: 25px;
+	display: inline-block;
+	text-decoration: none;
+	font-weight: bold;
+	line-height: 1;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-bottom: 1px solid #aaa;
+	position: relative;
+	cursor: pointer;
+}
+
+#TreeActions li.action input {
+	font-weight: normal;
+}
+
+.ajaxActions input:active {
+	background: #F4F4F4 none repeat scroll 0%;
+	border-color: #999999 rgb(204, 204, 204) rgb(204, 204, 204) rgb(153, 153, 153);
+}
+
+#import-Form_EditForm_Photo div.middleColumn div.import_dropdown button {
+	padding: 5px;
+}
+
+.TableListField div.utility a:hover ,
+.ajaxActions input:hover,
+	div.Actions input:hover,
+	input.action:hover,
+	button.action:hover,
+	li.action input:hover,
+	li.action button:hover,
+	li.selected input,
+	li.selected button {
+	color: #666;
+	background-image: -moz-linear-gradient(100% 100% 90deg, #ccc, #eee);
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ccc), to(#eee));
+}
+
+.ajaxActions input.disabled,
+	input.disabled {
+	color: #666;
+}
+
+input.disabled:hover {
+	background-image: url(../images/textures/ToolBar.png);
+}
+
+input.action.loading, input.action.loading:hover {
+	padding-left: 22px;
+	background: url(../images/network-save.gif) 3px 2px no-repeat;
+}
+
+input.delete:hover,
+button.delete:hover,
+.actionparams input.delete:hover {
+	background: #ce0000 !important;
+	color: #fff;
+}
+
+input.loading {
+	padding-left: 16px;
+	background: #fff url(../images/network-save.gif) no-repeat center left;
+}
+
+/* Overrides - TODO Find a better place to put them */
+
+form#Form_EditForm fieldset, form#Form_AddForm fieldset {
+	border: none;
+	width: 100%;
+}
+
+form#Form_EditForm #ScrollPanel fieldset, form#Form_AddForm #ScrollPanel fieldset {
+	height: auto;
+}
+
+/** 3-PANEL LAYOUT **/
+
+#top {
+	font-size: 14px;
+	background: #474855;
+	color: #fff;
+	overflow: hidden;
+	height: 34px;
+}
+
+#Form_EditForm fieldset ul.tabstrip li.first.current {
+	background: #fff;
+}
+
+#separator {
+	background-color: #474855;
+	cursor: e-resize;
+	display: none;
+}
+
+p.showUploadField ,
+#heading_sitetree,
+#sitetree_toggle_open ,
+#heading_versions,
+#tab-Root_Locking,
+ul.tree li.closed ul,
+input.hidden,
+body.stillLoading select,
+#Menu-ReportAdmin {
+	display: none;
+}
+
+#publication_key {
+	display: none;
+}
+
+/**
+ * Hidden left-hand panel
+ */
+
+#left.hidden form, #left.hidden .title, #left.hidden #TreeActions {
+	display: none;
+}
+
+#left.hidden {
+	width: 18px;
+	display: block;
+}
+
+#separator.hidden {
+	display: none;
+}
+
+#left div.title, #right div.title {
+	border-top: 1px solid #77BBEE;
+	height: 22px !important;
+	background: #0075C9 url(../images/textures/obar.gif) repeat-x 0 0;
+}
+
+#left div.title div, #right div.title div {
+	font-size: 14px;
+	font-weight: bold;
+	color: #fff;
+	padding: 2px 0 0 4px;
+	background-position: 2px 2px;
+	background-repeat: no-repeat;
+	padding-left: 20px;
+	border-top: 1px solid #77BBEE;
+}
+
+#left h2,
+#contentPanel h2 {
+	background: #474855;
+	height: 22px;
+	line-height: 18px;
+	color: #fff;
+	font-size: 12px;
+	display: none;
+	padding-left: 3px;
+}
+
+#sortitems {
+	float: left;
+	margin-right: 5px;
+}
+
+/** TOP PANEL **/
+
+#MainMenu {
+	clear: left;
+	float: left;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	left: 50%;
+	text-align: center;
+	top: -23px;
+}
+
+#MainMenu li {
+	display: block;
+	float: left;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	right: 50%;
+	height: 32px;
+}
+
+#left {
+	width: 230px;
+	background-image: url(../images/cmsbg-left.png);
+}
+
+#treepanes {
+	overflow-x: hidden;
+}
+
+#MainMenu li a {
+	display: block;
+	margin: 0 0 0 1px;
+	padding: 3px 10px;
+	background: #474855;
+	color: #fff;
+	text-decoration: none;
+	height: 26px;
+	line-height: 30px;
+	-moz-border-radius-topleft: 5px;
+	-webkit-border-top-left-radius: 5px;
+	-moz-border-radius-topright: 5px;
+	-webkit-border-top-right-radius: 5px;
+}
+
+#MainMenu li.current a:hover,
+#MainMenu li.current a {
+	background: #e5e0e8;
+	color: #474855;
+}
+
+#MainMenu li a:hover {
+	color: #fff;
+	background: #aab9ca;
+}
+
+#MainMenu li a.current,
+#MainMenu li a.active,
+#MainMenu li a.active:hover {
+	color: #fff;
+	background: #000;
+	font-weight: bold;
+}
+
+#top #Logo {
+	float: left;
+	margin-left: 15px;
+}
+
+#top #Logo a {
+	margin: 0;
+	display: block;
+	font-size: 14px;
+	text-decoration: none;
+	height: 26px;
+	line-height: 22px;
+	position: absolute;
+	top: 10px;
+	right: 8px;
+	padding-right: 34px;
+	background: url(../images/mainmenu/logo.gif) right top no-repeat;
+	color: #fff;
+}
+
+#bottom {
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height: 23px;
+	background: #474855;
+	border-top: 1px solid #1e1e1e;
+	z-index: 400;
+}
+
+#bottom .holder {
+	text-align: center;
+	padding: 5px 6px 0 3px;
+	font-size: 10px;
+	color: #fff;
+}
+
+#bottom #logInStatus {
+	float: right;
+}
+
+#bottom a {
+	color: #fff;
+	background: none;
+}
+
+#bottom a:hover {
+	text-decoration: none;
+	color: #ccc;
+}
+
+#bottom #logInStatus #LogoutLink {
+	background: url(../images/logout.gif) no-repeat right top;
+	padding-right: 20px;
+	padding-bottom: 3px;
+}
+
+#bottom #switchView {
+	float: left;
+	width: 290px;
+}
+
+#bottom #switchView a, #bottom #switchView span {
+	background: none;
+	padding-right: 8px;
+	display: inline-block;
+	border-left: 1px solid #AAA;
+	padding-left: 8px;
+	padding-top: 2px;
+}
+
+#bottom #switchView a:first-child, #bottom #switchView span:first-child {
+	border: none;
+	padding-left: 0;
+	margin-left: -30px;
+}
+
+div.sort-control {
+	width: auto;
+}
+
+#bottom #switchView span {
+	border-left: none;
+	padding: 0;
+}
+
+#bottom .bottomTabs a {
+	color: #fff;
+}
+
+#bottom .bottomTabs div.blank {
+	display: block;
+	float: left;
+	cursor: pointer;
+	background-color: transparent;
+	padding-right: 4px;
+	font-weight: bold;
+	line-height: 13px;
+	font-size: 11px;
+	padding-left: 2px;
+	color: #fff;
+}
+
+#bottom .bottomTabs .current {
+	color: #ccc;
+}
+
+#bottom .bottomTabs a:hover {
+	color: #ccc;
+	text-decoration: none;
+}
+
+/** LEFT PANEL **/
+
+#sitetree_holder {
+	height: 100% !important;
+	width: 100%;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+#SearchBox {
+	float: left;
+	margin: 5px 0 5px 10px;
+}
+
+#SearchControls label {
+	display: none;
+}
+
+#SearchControls select#SiteTreeFilterAddCriteria {
+	width: 105px;
+	margin: 0 0 0 10px;
+}
+
+#tab-Root_InformacionDeContacto ,#tab-Root_Ecommerce,#tab-Root_Social_set,#tab-Root_Content_set,#tab-Root_Translations,#tab-Root_Dependent,#tab-Root_Behaviour,#tab-Root_Main,#tab-Root_Access,#tab-Root_Mobile,#tab-Root_ContactDetails,#tab-Root_SocialLinks,#tab-Root_Showcase,#tab-Root_Files,#tab-Root_Details,#tab-Root_Members {
+	padding-left: 20px;
+}
+
+#tab-Root_Details {
+	background: url(../images/information.png) no-repeat 0;
+}
+
+#tab-Root_Ecommerce {
+	background: url(../images/ecommerce.gIF) no-repeat 0;
+}
+
+#tab-Root_Content_set {
+	background: url(../images/main.png) no-repeat 0;
+}
+
+#tab-Root_Translations {
+	background: url(../images/language.png) no-repeat 0;
+}
+
+#tab-Root_Dependent {
+	background: url(../images/link.png) no-repeat 0;
+}
+
+#tab-Root_Behaviour {
+	background: url(../images/settings.png) no-repeat 0;
+}
+
+#tab-Root_Access {
+	background: url(../images/lock.png) no-repeat 0;
+	display: none;
+}
+
+#batchactions button {
+	display: none;
+}
+
+#addpage button {
+	width: 170px;
+	margin-left: 10px;
+}
+
+#tab-Root_Main {
+	background: url(../images/main.png) no-repeat 0;
+}
+
+#tab-Root_Mobile {
+	background: url(../images/iphone.png) no-repeat 0;
+}
+
+#tab-Root_InformacionDeContacto,
+#tab-Root_ContactDetails {
+	background: url(../images/contact.png) no-repeat 0;
+}
+
+#tab-Root_Files {
+	background: url(../images/pictures.png) no-repeat 0;
+}
+
+#tab-Root_Members {
+	background: url(../images/folder_user.png) no-repeat 0;
+}
+
+#tab-Root_Social_set {
+	background: url(../images/facebook.png) no-repeat 0;
+}
+
+#tab-Root_Showcase {
+	background: url(../images/pictures.png) no-repeat 0;
+}
+
+#searchIndicator {
+	display: none;
+	width: 16px;
+	height: 16px;
+	background: #EFEFEF url(../images/network-save.gif) no-repeat;
+	position: absolute;
+	left: 95px;
+	top: 2px;
+}
+
+#searchIndicator.loading {
+	display: block;
+}
+
+.SearchCriteriaContainer {
+	float: left;
+	width: 100%;
+	padding-left: 5px;
+	margin-bottom: 4px;
+}
+
+#sitetree_ul, ul#sitetree {
+	padding: 3px 0 30px 3px;
+	clear: left;
+}
+
+#sitetree_ul ul#sitetree {
+	padding: 0;
+}
+
+#sitetree {
+	width: 500px;
+}
+
+html>body #sitetree {
+	width: auto;
+}
+
+#left #TreeActions,
+#left .checkboxAboveTree {
+	padding: 7px 0 8px;
+	border-bottom: 1px solid #aca8ae;
+	width: 100%;
+}
+
+#LangSelector_holder {
+	padding: 5px;
+	border-bottom: 1px solid #aca8ae;
+}
+
+#left .checkboxAboveTree {
+	border-bottom: 1px solid #909090;
+	padding-left: 10px;
+}
+
+#TreeTools div.checkboxAboveTree div {
+	margin-left: 5px;
+}
+
+#SearchControls,
+form#Form_AddPageOptionsForm.actionparams {
+	padding-top: 5px;
+	padding-bottom: 6px;
+	border: 1px solid #676468;
+	border-left: 0;
+	border-right: 0;
+	background-color: #ada9ae;
+}
+
+input#SiteTreeSearchTerm.SearchCriteria {
+	width: 200px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+#LinkType div.middleColumn {
+	background: none;
+}
+
+#LinkType label.left {
+	font-weight: bold;
+}
+
+#LinkType {
+	background: #fff;
+	overflow: auto;
+	padding: 5px;
+}
+
+#TreeTools div.checkboxAboveTree.noBottomBorder {
+	padding-left: 15px;
+	display: none;
+}
+
+#search button {
+	display: none;
+}
+
+#SearchBox div.SearchCriteria {
+	display: none;
+}
+
+#TreeTools label {
+	display: block;
+	padding-top: 2px;
+}
+
+#TreeTools #batchactionsforms {
+	padding: 5px 5px 7px;
+	background-color: #ada9ae;
+	border: 1px solid #676468;
+	border-left: 0;
+	border-right: 0;
+}
+
+#TreeTools select {
+	margin-left: 2px;
+	width: 67%;
+	margin-right: 10px;
+}
+
+#Form_AddPageOptionsForm_PageType {
+	float: left;
+	margin-top: 4px;
+}
+
+#TreeTools div p, #ShowChanged {
+	margin: 0 0 5px 0;
+	float: left;
+	width: 100%;
+}
+
+#TreeTools div.middleColumn {
+	margin: 0;
+}
+
+#TreeTools #action_publish_selected, 
+		#TreeTools #action_publish_selected {
+	padding: 2px 1px;
+	float: left;
+}
+
+#checkboxActionIndicator {
+	float: right;
+	width: auto;
+	margin-top: 7px;
+	display: none;
+}
+
+div.spacer, 
+li.spacer {
+	float: none;
+	clear: both;
+	background-color: transparent;
+	border-style: none;
+	margin: -1px 0 0 0;
+	height: 1px;
+	font-size: 1px;
+	width: auto;
+}
+
+/** RIGHT PANEL **/
+
+.mceToolbarExternal {
+	background-color: #eee;
+	display: block;
+}
+
+.mceToolbarExternal a {
+	text-decoration: none;
+	border: 0 !important;
+}
+
+.mceToolbarExternal a img {
+	border: none;
+}
+
+#right form#Form_EditorToolbarLinkForm,
+#right form#Form_EditorToolbarImageForm,
+#right form#Form_EditorToolbarFlashForm {
+	background: #eee;
+	border-bottom: 1px solid #ccc;
+	display: none;
+	margin: 1px 0 0 0;
+	padding: 5px;
+	
+
+/*
+
+* HACK IE (all versions): container needs to be higher stacking order
+	 * than any DOM-elemnt under it.
+	 * @see http://www.aplus.co.yu/lab/z-pos/
+	 */
+	
+
+
+
+
+
+/*
+
+overflow: hidden;*/
+	z-index: 1001;
+}
+
+#right form#Form_EditorToolbarLinkForm ul.optionset {
+	height: 1em;
+}
+
+#right form#Form_EditorToolbarLinkForm ul.optionset li {
+	float: left;
+}
+
+.thumbnailstrip {
+	overflow: auto;
+	white-space: nowrap;
+	width: 100%;
+	float: left;
+	border: 1px solid #aaa;
+}
+
+.thumbnailstrip li {
+	float: left;
+	margin-right: 4px;
+}
+
+/* CMS specific icons for the tree */
+
+ul.tree li.Root span.Root span.c a {
+	background: url(../images/tree.png) no-repeat;
+}
+
+/* Misc Styling */
+
+iframe {
+	border: none;
+}
+
+/* Content Panel Design
+ * This is our new right hand pane for inserting images and links etc
+ */
+
+#contentPanel {
+	width: 205px;
+	position: absolute;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	top: 45px;
+	padding: 0;
+	margin-right: 10px;
+	overflow: hidden;
+	font-size: 12px;
+	min-height: 87% !important;
+	background-color: #fff;
+	margin-top: 29px;
+}
+
+#Form_EditorToolbarImageForm {
+	position: relative;
+}
+
+#contentPanel .Actions {
+	position: absolute;
+	bottom: 10px;
+	left: 10px;
+}
+
+#contentPanel div,
+#contentPanel p#TargetBlank {
+	margin-left: 0;
+}
+
+#contentPanel div.TreeDropdownField {
+	width: 180px;
+}
+
+#contentPanel div.TreeDropdownField span.items {
+	width: 155px;
+	background: #fff;
+	font-size: 12px;
+	border: 1px solid #A7A7A7;
+	border-right: none;
+	overflow: hidden;
+}
+
+#contentPanel div.TreeDropdownField input.items {
+	float: left;
+	width: 155px;
+	background: #fff;
+	font-size: 12px;
+	border: 1px solid #A7A7A7;
+	border-right: none;
+	height: 19px;
+	overflow: hidden;
+}
+
+#contentPanel div.TreeDropdownField a {
+	overflow: visible;
+}
+
+#contentPanel .thumbnailstrip {
+	border: none;
+	width: 190px;
+	height: 120px;
+	overflow-y: auto;
+	margin-right: 0 !important;
+}
+
+#contentPanel fieldset {
+	padding-top: 5px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+#Form_EditorToolbarLinkForm div.Actions {
+	background: none;
+	border: none;
+}
+
+#contentPanel h2 {
+	margin: -5px -5px 0 -5px;
+}
+
+#contentPanel .thumbnailstrip h2 {
+	font-size: 1.1em;
+	margin: 0;
+	background: none;
+	color: #555;
+	height: auto;
+}
+
+#contentPanel select {
+	width: 186px;
+	padding: 1px 0;
+	font-size: 12px;
+}
+
+#contentPanel option {
+	font-size: 12px;
+}
+
+#contentPanel .middleColumn {
+	display: block;
+	padding: 0;
+	width: 98%;
+}
+
+#contentPanel input.text {
+	border: 1px solid #A7A7A7;
+	padding: 3px;
+	width: 179px;
+}
+
+#contentPanel #Dimensions div.middleColumn {
+	background: none;
+}
+
+/* Image height and width inputs. We need to position them in the right places */
+
+#contentPanel input#Form_EditorToolbarImageForm_Width,
+#contentPanel input#Form_EditorToolbarFlashForm_Width {
+	width: 30px;
+}
+
+#contentPanel input#Form_EditorToolbarImageForm_Height,
+#contentPanel input#Form_EditorToolbarFlashForm_Height {
+	width: 30px;
+}
+
+#Form_EditorToolbarImageForm #FolderImages,
+#Form_EditorToolbarFlashForm #Flash {
+	margin: 5px;
+}
+
+#Form_EditorToolbarImageForm fieldset label.left,
+#Form_EditorToolbarFlashForm fieldset label.left, 
+#Form_EditorToolbarLinkForm fieldset label.left {
+	float: left;
+	margin-left: 0px;
+	color: #666;
+	line-height: 1.2;
+	font-size: 11px;
+	width: 190px;
+}
+
+#Form_EditorToolbarImageForm fieldset div.middleColumn,
+#Form_EditorToolbarFlashForm fieldset div.middleColumn,
+#Form_EditorToolbarLinkForm fieldset div.middleColumn {
+	float: left;
+}
+
+#Form_EditorToolbarLinkForm fieldset li div.middleColumn,
+#Form_EditorToolbarFlashForm fieldset li div.middleColumn,
+#Form_EditorToolbarImageForm fieldset li div.middleColumn {
+	float: none;
+}
+
+#Form_EditorToolbarImageForm fieldset div.fieldgroupField,
+#Form_EditorToolbarFlashForm fieldset div.fieldgroupField,
+#Form_EditorToolbarLinkForm fieldset div.fieldgroupField {
+	display: inline;
+}
+
+#Form_EditorToolbarLinkForm .buttonRefresh {
+	display: block;
+	border: 1px solid #F0F0EE;
+	width: 20px;
+	height: 20px;
+	float: left;
+}
+
+#Form_EditorToolbarLinkForm a.buttonRefreshHover {
+	border: 1px solid #0A246A;
+	background-color: #B2BBD0;
+}
+
+#Form_EditorToolbarLinkForm a.defaultSkin .mceButtonDisabled .mceIcon {
+	opacity: 0.3;
+}
+
+#Form_EditorToolbarLinkForm a.buttonRefresh span {
+	display: block;
+	width: 20px;
+	height: 20px;
+	background: transparent url(../../cms/images/arrow_refresh.gif) no-repeat;
+}
+
+#Form_EditorToolbarLinkForm select.hasRefreshButton {
+	width: 160px;
+}
+
+#Form_EditorToolbarImageForm_Width,
+#Form_EditorToolbarImageForm_Height,
+#Form_EditorToolbarFlashForm_Width,
+#Form_EditorToolbarFlashForm_Height {
+	outline: 3px solid #E9E9E9;
+}
+
+#Form_EditorToolbarImageForm #FolderImages img,
+#Form_EditorToolbarFlashForm #Flash img {
+	border: 2px solid #e4e3e3;
+}
+
+#contentPanel #FolderImages a.selectedImage img,
+#contentPanel #Flash a.selectedFlash img {
+	border: 2px solid #222;
+}
+
+/* going to use this */
+
+#BlankImage {
+	text-indent: -9000px;
+}
+
+/**
+ * Messages (see sapphire/css/Form.css)
+ */
+
+.message {
+	margin: 1em 0;
+	padding: 0.5em;
+	font-weight: bold;
+	border: 1px black solid;
+	background-color: #B9FFB9;
+	border-color: #00FF00;
+}
+
+.message.notice {
+	background-color: #FCFFDF;
+	border-color: #FF9300;
+}
+
+.message.warning {
+	background-color: #FFD2A6;
+	border-color: #FF9300;
+}
+
+.message.bad {
+	background-color: #FF8080;
+	border-color: #FF0000;
+}
+
+/**
+ * Fields
+ */
+
+fieldset {
+	margin: 0;
+	padding: 0;
+	border: none !important;
+}
+
+form .field {
+	clear: both;
+	vertical-align: middle;
+	border: none;
+	margin-bottom: 10px;
+}
+
+#Form_AddPageOptionsForm .field {
+	margin-bottom: 0;
+}
+
+form p.checkbox {
+	margin: 0 0 0 8.5em;
+}
+
+form .field.nolabel {
+	margin-left: 0;
+}
+
+form label.left {
+	float: left;
+	width: 10em;
+	margin-left: -10em;
+}
+
+form input.maxlength {
+	width: auto;
+}
+
+form .actions {
+	float: right;
+}
+
+form .validation,
+form .error,
+form .required {
+	border: 1px solid #f00;
+	background: #fcc;
+	padding: 0.5em;
+	width: 50%;
+}
+
+form .field span.readonly {
+	border: 1px #CCC dotted;
+	background-color: #F7F7F7;
+	display: block;
+	width: 98%;
+	padding: 3px;
+	margin: 5px 0;
+}
+
+form .indicator.inline {
+	display: inline;
+	margin-left: 5px;
+	vertical-align: middle;
+}
+
+form .indicator.block {
+	display: inline;
+}
+
+/* Emulating link styling for actions requiring lesser attention, e.g. "cancel" FormActions */
+
+form button.minorAction {
+	background: none;
+	padding: 0;
+	border: 0;
+	color: #0074C6;
+	text-decoration: underline;
+	text-shadow: none;
+		box-shadow: none;
+	-webkit-box-shadow: none;
+
+}
+
+#Form_SearchForm_Product fieldset div.field.CompositeField.ResultAssemblyBlock.nolabel,
+#Form_ImportForm_Product,
+#Form_Product h3 {
+	display: none;
+	
+}
+
+form div.CompositeField {
+	margin-left: 7.5em;
+}
+
+form div.CompositeField div.field {
+	font-size: 1em;
+}
+
+form div.CompositeField {
+	clear: both;
+}
+
+form div.CompositeField label.left {
+	float: left;
+	width: 10em;
+	margin-left: -10em;
+}
+
+form div.column2 {
+	float: left;
+	width: 45%;
+	margin-right: 4%;
+}
+
+form div.multicolumn {
+	width: 100%;
+	float: left;
+	clear: left;
+}
+
+/**
+ * Messages
+ */
+
+form .message.notice {
+	background-color: #FCFFDF;
+	border-color: #FF9300;
+}
+
+form .message {
+	margin: 1em 0;
+	padding: 0.5em;
+	font-weight: bold;
+	border: 1px black solid;
+	background-color: #B9FFB9;
+	border-color: #00FF00;
+}
+
+form .message.warning {
+	background-color: #FFD2A6;
+	border-color: #FF9300;
+}
+
+form .message.bad {
+	background-color: #FF8080;
+	border-color: #FF0000;
+}
+
+form .message.required,
+	form .message.validation {
+	display: block;
+	margin-top: 5px;
+	color: #FF9300;
+	width: 240px;
+	border-color: #FF9300;
+}
+
+form .message.validation {
+	color: #FF4040;
+	width: 240px;
+	border-color: #FF4040;
+}
+
+/** LOGIN FORM **/
+
+#Remember {
+	margin: 0.5em 0 0.5em 11em !important;
+}
+
+p#Remember label {
+	display: inline-block;
+	margin: 0;
+}
+
+#Remember input {
+	float: left;
+	margin: 0 5px 0 0;
+}
+
+#MemberLoginForm_LoginForm .Actions {
+	padding-left: 0;
+}
+
+#ForgotPassword {
+	margin-top: 1em;
+}
+
+/* @group right */
+
+#right p,
+#right .optionset {
+	margin: 7px 0;
+}
+
+#right .optionset li {
+	margin: 8px 0;
+}
+
+#Form_EditForm_action_rollback,
+form legend {
+	display: none;
+}
+
+#SiteTreeSearchTerm {
+	border: none;
+	height: 9px;
+	float: left;
+	border: 1px dotted #CCCCCC;
+	padding: 3px;
+	width: 100%;
+}
+
+form .text,
+	form .field span.readonly,
+	form .field span.readonly i,
+	form div.TableListField table i,
+	form .calendardate input,
+	form .dropdowntime input {
+	font-size: 12px;
+}
+
+form .field span.readonly {
+	margin: 0;
+	width: auto;
+}
+
+form #URL .fieldgroup * {
+	font-size: 12px;
+	width: auto;
+	font-weight: bold;
+}
+
+form .fieldgroupField {
+	display: inline;
+}
+
+form #URL .fieldgroup {
+	display: block;
+	height: 16px;
+	padding: 3px;
+}
+
+form #URL .originallang_holder {
+	display: inline;
+	border: none;
+	padding: 0;
+}
+
+form #URL .fieldgroup input {
+	border: 1px solid #A7A7A7;
+	padding: 2px;
+	width: auto;
+	margin-top: -3px;
+}
+
+form #URL .fieldgroup span.readonly {
+	display: inline;
+	border: none;
+	padding: 0;
+}
+
+form .dropdown,
+	form .typedropdown,
+	form .countrydropdown {
+	font-size: 12px;
+}
+
+form .dropdown select,
+		form .typedropdown select,
+		form .countrydropdown select {
+	font-size: 12px;
+	height: 19px;
+}
+
+form .dropdown select option,
+			form .typedropdown select option,
+			form .countrydropdown select option {
+	font-size: 12px;
+}
+
+form .field.image .middleColumn,
+	form .field.simpleimagefield_disabled .middleColumn {
+	padding-bottom: 0;
+}
+
+form .htmleditorfield span.readonly *,
+	#right form .htmleditorfield span.readonly * {
+	margin: 0;
+	border: 0;
+	padding: 0;
+}
+
+form .checkbox input,
+form .optionset input {
+	border: none;
+}
+
+form .field label {
+	font-size: 11px;
+}
+
+form .field label.left {
+	float: none;
+	display: block;
+	margin-left: 0;
+	color: #666;
+	margin-bottom: 3px;
+	/*
+
+font-size: 11px;*/
+	width: 96%;
+}
+
+.TreeDropdownField {
+	width: 27.7em;
+	background: #fff;
+	font-size: 12px;
+	height: 21px;
+}
+
+form textarea,
+form input.text,
+form textarea.htmleditor {
+	border: 1px solid #ccc;
+	padding: 3px;
+	width: 99%;
+}
+
+form textarea {
+	font-size: 12px;
+}
+
+form .mceEditor select.mceNativeListBox {
+	background: #fff;
+	padding-top: 2px;
+	width: 95px;
+	font-size: 11px;
+}
+
+form .mceEditor select.mceNativeListBox option {
+	padding: 0 2px 0 2px;
+	font-size: 11px;
+}
+
+form .mceEditor .mceFirst {
+	background: #f4f4f4;
+}
+
+form .mceEditor .mceToolbar table {
+	background: transparent;
+}
+
+form .mceEditor .mceButton {
+	padding: 1px;
+}
+
+form .mceEditor select.mceNativeListBox {
+	background: #fff;
+}
+
+form .mceEditor .mceFirst {
+	background: #fbfbfb url(../images/textures/mce_editor.gif) repeat-x bottom;
+}
+
+form .mceEditor .mceToolbar table {
+	background: transparent;
+}
+
+form .mceEditor select.mceNativeListBox {
+	background: #fff;
+}
+
+form input.checkbox, 
+form .optionset input, 
+form .htmleditor select, 
+form input.action {
+	width: auto;
+	margin-right: 4px;
+}
+
+form #Root_Access input {
+	float: left;
+}
+
+#Form_EditorToolbarLinkForm_LinkType li {
+	margin-bottom: 3px;
+}
+
+form .optionset li {
+	list-style: none;
+}
+
+form .optionset li.cancel {
+	float: left;
+}
+
+form .optionset li.submit {
+	float: right;
+}
+
+form h1 {
+	font-size: 20px;
+}
+
+form h2 {
+	font-size: 18px;
+	clear: both;
+}
+
+form h3 {
+	font-size: 16px;
+}
+
+form h4 {
+	font-size: 14px;
+}
+
+form h5 {
+	font-size: 12px;
+}
+
+form .fieldgroup input, 
+form .fieldgroup select {
+	width: auto;
+}
+
+/**
+ * RHS Action Parameters boxes
+ */
+
+#right form.actionparams {
+	border: 1px solid #777;
+	background: #ccc;
+	position: absolute;
+	bottom: 32px;
+	right: 11px;
+	width: 300px;
+	z-index: 200;
+	padding: 10px;
+}
+
+#right form.actionparams div.field {
+	margin-left: 6em;
+}
+
+#right form.actionparams label.left {
+	width: 6em;
+	margin-left: -6em;
+}
+
+#right form.actionparams input, #right form.actionparams select, #right form.actionparams textarea {
+	width: 100%;
+}
+
+#right form.actionparams  input.checkbox, #right form.actionparams .optionset input {
+	width: auto;
+}
+
+#right form.actionparams p.label {
+	margin: 10px 0 0 0;
+}
+
+#right form.actionparams .actions {
+	margin: 10px 0 0 0;
+	text-align: right;
+}
+
+#right form.actionparams .actions input {
+	width: auto;
+}
+
+#right form.actionparams .sendingText {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	padding: 10% 0 0 0;
+	height: 60%;
+	background: #ccc;
+	font-size: 25px;
+	font-weight: bold;
+	color: #fff;
+	text-align: center;
+}
+
+#right form.actionparams div.TreeDropdownField {
+	width: 220px;
+	padding-bottom: 150px;
+}
+
+#right form.actionparams div.TreeDropdownField span.items {
+	width: 195px;
+}
+
+#right form.actionparams div.TreeDropdownField div.tree_holder {
+	width: 214px;
+}
+
+/**
+ * Autocomplete
+ */
+
+.autocomplete {
+	margin-left: 1px;
+	background: white;
+	overflow: visible;
+}
+
+.autocomplete ul {
+	border: 1px solid #aaa;
+	background: #FFFFBB;
+}
+
+.autocomplete li {
+	list-style-type: none;
+	cursor: pointer;
+	font-size: 12px;
+	padding: 3px;
+	white-space: nowrap;
+}
+
+.autocomplete .data {
+	display: none;
+}
+
+.autocomplete .informal {
+	font-style: italic;
+}
+
+/*
+	 * Status
+	 */
+
+#statusMessage {
+	position: absolute;
+	z-index: 500;
+	bottom: 4px;
+	left: 10px;
+	text-align: left;
+	padding: 2px 20px 2px 20px;
+	font-size: 14px;
+	font-weight: bold;
+	color: #660;
+	background: #f4f3eb;
+	border: 1px solid #a9a67d;
+	margin: 0 !important;
+	line-height: 1.5;
+}
+
+#statusMessage.good {
+	padding: 2px 20px 2px 40px;
+	color: #060;
+	background: #E2F9E3 url(../images/alert-good.gif) 7px 50% no-repeat;
+	border: 1px solid #8dd38d;
+}
+
+#statusMessage.bad {
+	padding: 2px 20px 2px 40px;
+	border-color: #ff8e8e;
+	color: #c80700;
+	background: #ffe9e9 url(../images/alert-bad.gif) 7px 50% no-repeat;
+	max-height: 300px;
+	overflow: auto;
+}
+
+/**
+ * TableField Subclasses
+ */
+
+/**
+ * i18n
+ */
+
+form div.originallang_holder {
+	border: 1px dashed #aaa;
+	margin-bottom: 10px;
+	margin-left: 0 !important;
+	padding: 8px 0 6px 5px;
+}
+
+.originallang,
+#Form_EditForm_URLSegment_original {
+	color: #666;
+	font-style: italic;
+}
+
+form .CompositeField .originallang label.left,
+form div.originallang_holder label.left {
+	margin-left: 0 !important;
+	width: auto !important;
+	float: none !important;
+}
+
+form div.CompositeField .originallang .middleColumn {
+	clear: left;
+}
+
+form div.languageDropdown {
+	clear: right;
+	float: left;
+	padding-right: 4px;
+}
+
+form .createTranslationButton .middleColumn {
+	background: none;
+}
+
+.translatingMessage {
+	background: #F9F9E3;
+	border: 1px solid #CCCC99;
+	font-size: 12px;
+	padding: 3px;
+}
+
+.nonTranslating {
+	display: none;
+}
+
+#contentPanel div.TreeDropdownField a.editLink {
+	float: left;
+	margin: 0px;
+	outline: 0;
+}
+
+#contentPanel div.tree_holder {
+	width: 184px;
+	height: 260px;
+	/*
+
+Keep a scrollbar in the RHS tree dropdowns, in case the content is too wide for the column */
+	overflow-x: scroll;
+}
+
+#contentPanel ul.tree a {
+	padding-left: 20px;
+}
+
+#contentPanel h2 img {
+	float: right;
+	margin-right: 2px;
+	cursor: pointer;
+}
+
+form .field.confirmedpassword.nolabel .middleColumn {
+	background-color: #fff;
+	padding: 0px;
+}
+
+form .field.confirmedpassword.nolabel .middleColumn .middleColumn {
+	background-color: #e9e9e9;
+	padding: 3px;
+}
+
+.autocompleteoptions {
+	background-color: white;
+}
+
+.tab .tab {
+	overflow-y: auto;
+	overflow-x: hidden !important;
+	border: none;
+	padding: 0;
+}
+
+/*
+
+ @end */
+
+/* @group clearfix */
+
+.cf:after, .container:after,.Actions:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+.cf, .container,.Actions {
+	display: inline-block;
+}
+
+* html .cf, * html .container, * html .Actions {
+	height: 1%;
+}
+
+.cf, .container {
+	display: block;
+}
+
+.clear {
+	clear: both;
+}
+
+/* @end */
+
+/* @group newLogin */
+
+.dospuntoceroLogin {
+	height: auto;
+}
+
+.dospuntoceroLogin .form {
+	width: 320px;
+	margin: 120px auto 0 auto;
+	border-top: 1px solid #aaa;
+	border-left: 1px solid #aaa;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	padding: 60px 40px 40px;
+	opacity: .95;
+	background: #fff url(../images/dospuntocero.png) no-repeat 40px 20px;
+	shadow: #000000 2px 2px 2px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-webkit-box-shadow: #aaa 0 0 20px
+}
+
+.dospuntoceroLogin .form:hover {
+	-webkit-transition-property: background-color, color;
+	-webkit-transition-duration: .2s;
+	-webkit-transition-timing-function: ease-in
+}
+
+.dospuntoceroLogin .form .field {
+	padding: 10px 0;
+	margin: 0;
+}
+
+.dospuntoceroLogin #MemberLoginForm_LoginForm label.left {
+	display: block;
+	width: 90px;
+	margin: 0;
+	font-size: 14px;
+}
+
+.dospuntoceroLogin .form input {
+	width: 300px;
+	margin: 0 0 10px;
+	clear: both;
+	border: 1px solid #aaa;
+	padding: 6px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+}
+
+.dospuntoceroLogin p {
+	margin: 0;
+	padding-bottom: 20px;
+}
+
+.dospuntoceroLogin .form fieldset {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+.dospuntoceroLogin .form label.right {
+	font-size: 12px;
+}
+
+.dospuntoceroLogin #MemberLoginForm_LoginForm .field {
+	padding: 0;
+	margin: 0 !important;
+}
+
+.dospuntoceroLogin #Remember input {
+	width: 12px;
+}
+
+.dospuntoceroLogin .form .Actions {
+	padding: 0;
+	margin-top: 20px;
+	width: 100%;
+}
+
+.dospuntoceroLogin #ForgotPassword {
+	float: left;
+	padding: 0;
+	height: 27px;
+	margin: 0;
+}
+
+.dospuntoceroLogin .Actions input {
+	float: left;
+	width: auto;
+	cursor: pointer;
+	color: #333;
+	overflow: visible;
+	width: auto;
+	border-radius: 1.6em;
+	border: none;
+	margin-right: 10px;
+	font-size: 11px;
+	display: inline-block;
+	padding: 5px 10px 6px;
+	text-decoration: none;
+	font-weight: bold;
+	line-height: 1;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-bottom: 1px solid #aaa;
+	position: relative;
+	cursor: pointer;
+	background-image: -moz-linear-gradient(100% 100% 90deg, #eee, #ccc);
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#eee), to(#ccc));
+}
+
+.dospuntoceroLogin .Actions input:hover {
+	background: #e5e0e8;
+	cursor: pointer;
+}
+
+.dospuntoceroLogin #ForgotPassword a {
+	font-size: 10px;
+	line-height: 25px;
+	text-decoration: none;
+	color: #555;
+}
+
+.dospuntoceroLogin #ForgotPassword a:hover {
+	text-decoration: underline;
+}
+
+/* @end */
+
+/**
+ * Current style
+ */
+
+.GB_t_frame {
+	color: #CCDEF3;
+	font-size: 12px;
+	line-height: 12px;
+	margin: 0;
+	padding: 0;
+	border-collapse: collapse;
+}
+
+.GB_content {
+	background-color: #fff;
+	z-index: 155;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	padding-top: 10px;
+}
+
+.GB_loader {
+	color: #616161;
+	background-color: #fff;
+}
+
+.GB_header {
+	border-bottom: 3px solid #CCDEF3;
+	background: #ccdef3 url(../../cms/images/mainmenu/current.gif) repeat-x;
+	color: #555;
+}
+
+.GB_caption {
+	font-weight: bold;
+	font-size: 13px;
+}
+
+/**
+ * Base stuff
+ */
+
+#GB_overlay {
+	position: absolute;
+	margin: auto;
+	top: 0;
+	left: 0;
+	z-index: 100;
+}
+
+#GB_window {
+	font-family: helvetica, verdana, sans-serif;
+	left: 0;
+	top: 0;
+	font-size: 1px;
+	position: absolute;
+	overflow: visible;
+	z-index: 150;
+}
+
+#GB_frame {
+	border: 0;
+	margin: 0;
+	padding: 0;
+	overflow: auto;
+}
+
+/**
+ * Content
+ */
+
+.GB_loader {
+	z-index: 500;
+	left: 6px;
+	font-size: 16px;
+	text-align: center;
+}
+
+/**
+ * Header
+ */
+
+.GB_header {
+	width: 100%;
+	text-align: left;
+	vertical-align: middle;
+	padding: 2px 1px 2px 1px;
+	margin: 0;
+}
+
+.GB_close {
+	white-space: nowrap;
+	text-align: right;
+	width: 10%;
+	top: 0;
+	z-index: 200;
+	cursor: pointer;
+	font-size: 13px;
+	font-weight: bold;
+}
+
+.GB_close img {
+	width: 11px;
+	height: 11px;
+	padding: 0;
+	margin-right: 3px;
+}
+
+.GB_container {
+	margin: 0;
+	padding: 0 0 10px 0;
+}
+
+#WhatTemplate li {
+	float: left;
+	width: 190px;
+}
+
+#WhatTemplate li input {
+	position: relative;
+	top: -70px;
+	left: 0;
+}
+
+.extraOptions {
+	display: none;
+	padding: 5px;
+	margin: 5px 5px 5px 52px;
+	background: #e6e6e6;
+}
+
+.EditableFormField .fieldActions {
+	margin-left: 48px;
+	padding: 4px;
+}
+
+.addCustomRule label.left {
+	margin-left: 0;
+}
+
+.customRules.fieldOptionsGroup {
+	display: none;
+}
+
+#Fields .MenuHolder {
+	padding: 5px;
+	margin: 5px;
+}
+
+#Fields .MenuHolder h2 {
+	float: left;
+	margin-right: 15px;
+}
+
+#Fields .FormOptions {
+	margin: 5px;
+	padding: 5px;
+}
+
+.fieldInfo img.icon {
+	float: left;
+	margin-right: 13px;
+}
+
+.fieldInfo input.text {
+	width: 440px;
+}
+
+.fieldActions {
+	width: 220px;
+}
+
+.EditableFormField {
+	padding: 5px;
+	margin: 5px;
+	background: #efefef;
+}
+
+.fieldInfo img.fieldHandler {
+	display: none;
+}
+
+.contextMenu {
+	border: 3px solid #fff;
+	box-shadow: 0px 7px 10px #BDBDBD;
+	-webkit-box-shadow: 0px 7px 10px #BDBDBD;
+	-moz-box-shadow: 0px 7px 10px #BDBDBD;
+	background: #fff;
+	padding: 5px;
+}
+
+.contextMenu a {
+	text-decoration: none;
+	color: #666;
+}
+
+.contextMenu a:hover {
+	text-decoration: underline;
+}
+
+.list .dataobject-list li {
+	background: #fff;
+}
+
+.AssetAdmin #addpage button {
+	width: 40px;
+	margin: 0;
+}
+
+.AssetAdmin #deletepage button {
+	margin: 0;
+}
+
+.AssetAdmin #TreeActions {
+	padding-bottom: 0 !important;
+}
+
+.SecurityAdmin .tab {
+	padding-top: 10px;
+}
+
+.SecurityAdmin ul.tabstrip {
+	clear: both;
+	height: 30px;
+	margin-top: 9px;
+	margin: 0;
+	padding-left: 10px;
+	padding-top: 3px;
+}
+
+.SecurityAdmin ul.tabstrip li {
+	list-style: none;
+	float: left;
+	padding: 0 0 0 9px;
+	cursor: pointer;
+	margin-right: 10px;
+	font-size: 12px;
+}
+
+.SecurityAdmin ul.tabstrip li a {
+	display: block;
+	float: left;
+	padding: 7px 9px 7px 0;
+	text-decoration: none;
+	color: #555;
+	outline: none;
+	line-height: 7px;
+}
+
+.SecurityAdmin ul.tabstrip li a:hover {
+	text-decoration: none;
+	color: #000;
+}
+
+.SecurityAdmin ul.tabstrip li.current,
+.SecurityAdmin ul.tabstrip li.ui-tabs-selected,
+.SecurityAdmin ul.tabstrip li.sel,
+.SecurityAdmin ul.tabstrip li.over {
+	top: 1px;
+	background-color: #fff;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
+
+.SecurityAdmin .tab .tab {
+	overflow: auto;
+}
+
+.SecurityAdmin ul.optionset {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+/* Filter box (for search/filter box above a table on Asset/MemberTableField) */
+
+div.filterBox {
+	width: inherit;
+	margin: 5px 0;
+	padding: 5px 5px 5px 10px;
+	background: #EEE;
+}
+
+div.filterBox .middleColumn {
+	background: none !important;
+}
+
+form div.filterBox label {
+	display: block;
+	width: 5em;
+	float: left;
+	margin-left: 0;
+	line-height: 2.3;
+	font-weight: bold;
+	font-size: 12px;
+}
+
+div.filterBox div.field {
+	margin-left: 0 !important;
+	padding: 0;
+	font-size: 12px;
+	display: inline;
+}
+
+div.filterBox input,
+	div.filterBox select {
+	width: auto;
+}
+
+/* @group tablelist */
+
+#MemberList {
+	margin: 0 !important;
+}
+
+table.TableField, 
+table.TableListField, 
+.TableListField table.data, 
+table.CMSList {
+	border-collapse: collapse;
+	border-spacing: 0;
+	width: 100%;
+}
+
+/* Preventing IE6 from showing double borders */
+
+body>div table.TableField, 
+body>div table.TableListField, 
+body>div .TableListField table.data, 
+body>div table.CMSList {
+	border-collapse: separate;
+}
+
+table.TableField td, 
+table.TableListField td, 
+.TableListField table.data td, 
+table.CMSList td {
+	border-style: none;
+}
+
+table.TableField th, 
+table.TableListField th, 
+.TableListField table.data th, 
+table.CMSList th {
+	white-space: nowrap;
+}
+
+table.TableField thead th, 
+.TableListField table.data thead th, 
+table.CMSList thead th {
+	background-repeat: repeat-x;
+	background-position: left bottom;
+	background-color: #bdcbd1;
+	white-space: nowrap;
+	padding: 3px;
+	font-size: 12px;
+	text-align: left;
+}
+
+table.TableField thead th span, 
+.TableListField table.data thead th span {
+	font-size: 12px;
+}
+
+table.TableField thead th a, 
+.TableListField table.data thead th a, 
+table.CMSList thead th a {
+	color: #000;
+}
+
+table.TableField thead th span.sortLink, 
+.TableListField table.data thead th span.sortLink, 
+table.CMSList thead th span.sortLink {
+	overflow: hidden;
+}
+
+table.TableField tfoot tr.summary td, 
+.TableListField table.data tfoot tr.summary td, 
+table.CMSList tfoot tr.summary td {
+	background-color: #ebeadb;
+}
+
+table.TableField tbody td, 
+table.TableField tfoot td, 
+.TableListField table.data tbody td, 
+.TableListField table.data tfoot td, 
+table.CMSList tbody td,
+table.CMSList tfoot td {
+	border: 1px solid #f1efe2;
+	padding: 2px 4px;
+}
+
+.TableListField table.data tfoot tr.addtogrouprow td {
+	padding: 3px;
+}
+
+.TableListField table.data tfoot .actions {
+	float: none;
+}
+
+.TableListField table.data tfoot tr.addtogrouprow input {
+	width: 94%;
+	margin: 0;
+}
+
+#tab-Root_Roles,
+#tab-Root_Import,
+#tab-Root_IPAddresses {
+	display: none;
+}
+
+#deletegroup_options {
+	padding-left: 10px;
+	padding-top: 5px;
+}
+
+p {
+	padding-bottom: 5px;
+}
+
+.TableField td input,
+.TableListField td input {
+	width: 98%;
+}
+
+table.data tbody td input,
+table.data tbody td textarea {
+	border: 0 !important;
+}
+
+table.TableField tbody td.checkbox, 
+.TableListField table.data tbody td.checkbox, 
+table.CMSList tbody td.checkbox {
+	border: 1px solid #f1efe2;
+	padding-left: 5px;
+	background-image: url(../../cms/images/tables/checkbox.png);
+	background-repeat: repeat-x;
+	background-position: left bottom;
+}
+
+table.TableField tbody tr.over td, 
+.TableListField table.data tbody tr.over td, 
+.TableListField table.data tbody tr.over td input,
+table.CMSList tbody td.over td {
+	background-color: #d7e3f7;
+}
+
+table.TableField tbody tr.current td, 
+.TableListField table.data tbody tr.current td, 
+table.CMSList tbody td.current td {
+	background-color: #316ac5;
+	color: white;
+}
+
+.TableListField table.data tfoot .addlink img {
+	vertical-align: middle;
+	margin: 3px 6px 3px 3px;
+}
+
+.TableListField table.data tfoot tr td a {
+	text-decoration: none;
+}
+
+.TableListField table.data tbody tr td a:hover,
+.TableListField table.data tfoot tr td a:hover {
+	background: none;
+}
+
+/**
+ * Show a loading indication on a TableListField row
+ */
+
+.TableListField tr.loading td.first {
+	padding-left: 22px;
+	background: url(../../cms/images/network-save.gif) 3px 2px no-repeat;
+}
+
+.right form .TableField span.readonly {
+	border: 0;
+	background: none;
+	padding: 0;
+	margin-bottom: 0;
+}
+
+.right form .TableListField td {
+	background: #fff;
+}
+
+.TableListField div.utility {
+	overflow: auto;
+}
+
+.TableListField div.utility .item {
+	margin-top: 1em;
+	padding: 3px 0 6px 0;
+	display: block;
+	float: left;
+}
+
+form .TableField .message {
+	width: auto;
+}
+
+.TableListField .selectOptions {
+	overflow: auto;
+	font: 1.3em;
+	margin: 0;
+	padding: 0;
+}
+
+.TableListField .selectOptions li {
+	float: left;
+	margin: 0px 5px;
+}
+
+.TableListField .PageControls {
+	margin: 5px 0;
+	text-align: center;
+	display: block;
+	margin-bottom: 5px;
+	position: relative;
+}
+
+#Root_Members p.caution-remove {
+	padding-left: 10px;
+}
+
+.TableListField .PageControls * {
+	display: inline;
+	vertical-align: middle;
+	font-weight: bold;
+}
+
+.TableListField .PageControls .Last {
+	display: block;
+	width: 40px;
+	text-align: right;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+}
+
+.TableListField .PageControls .First {
+	float: left;
+	display: block;
+	width: 40px;
+	text-align: left;
+}
+
+#Pagination {
+	margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#Pagination a {
+	font-size: 14px;
+	width: 1px;
+	height: 1px;
+	margin: 1px;
+}
+
+#Pagination span {
+	display: inline;
+	color: red;
+	font-size: 14px;
+}
+
+#Pagination div {
+	display: inline;
+}
+
+#Pagination_Next a {
+	text-decoration: none;
+}
+
+#Pagination_Next a div {
+	position: relative;
+	left: -20px;
+}
+
+#Pagination_Next a img {
+	position: relative;
+	top: -15px;
+	left: 5px;
+}
+
+#Pagination_Previous a {
+	text-decoration: none;
+}
+
+#Pagination_Previous a img {
+	position: relative;
+	top: -15px;
+	left: 35px;
+}
+
+/* @end */
+
+#Form_EditForm fieldset ul.tabstrip {
+	height: 29px;
+	background: none;
+	padding-top: 10px;
+}
+
+#upload-Form_EditForm_Photo div.middleColumn,
+#import-Form_EditForm_Photo div.middleColumn {
+	background-color: #e9e9e9;
+}
+
+.DataObjectManager-popup #pagination {
+	width: auto !important;
+}
+
+.FileAttachmentField {
+	background: #fff !important;
+	width: 600px;
+	overflow: hidden;
+	padding: 10px;
+	margin-bottom: 10px;
+	border: 1px solid #ccc;
+}
+
+#Form_EditForm_Products div.dataobjectmanager-actions.filter {
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+
+
+/* @group ModelAdmin */
+body.ModelAdmin {
+	#LeftPane {
+		form{
+			.Actions{
+				margin: 0;
+				padding: 0;
+				overflow: visible;
+			}
+
+			&#Form_ResultsForm {
+				padding: 10px;	
+			}
+			
+			button.minorAction {
+				background: none;
+				padding: 6px;
+				border: 0;
+				margin: 0;
+				color: #0074C6;
+				text-decoration: underline;
+				text-shadow: none;
+					box-shadow: none;
+				-webkit-box-shadow: none;
+			}
+		} 
+		.tab {
+			background: none;	
+			padding: 0em;
+			padding-top: 1em;
+		}
+	}
+	#ModelAdminPanel{
+		form{
+			padding: 10px;
+			padding-bottom: 0em;
+		}
+		.ajaxActions {
+
+			bottom:20px !important;
+			height: 30px;
+		}
+		.tab {
+			overflow: auto;
+			padding: 10px 10px 0 !important;
+		}
+	}
+	#right{
+		.ajaxActions{
+			position:absolute;
+			bottom: 20px;
+			height: 30px;
+		}
+	}
+}
+                     
+
+
+/* @end */
+

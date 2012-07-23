@@ -1,0 +1,171 @@
+/* @override 
+	http://erb/dospuntoceroCMS//css/tabstrip.css
+	http://eib2/dospuntoceroCMS//css/tabstrip.css
+	http://edificio/dospuntoceroCMS//css/tabstrip.css
+	http://pcm/dospuntoceroCMSCore//css/tabstrip.css
+	http://tienda/dospuntoceroCMSCore//css/tabstrip.css
+*/
+
+* fieldset {
+	border: 0;
+	padding: 0;
+	font: 10px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+
+h5 {
+	font-size: 15px;
+	margin: 0 0 5px;
+}
+
+body.ArrayData {
+	margin: 0;
+}
+
+.tab {
+	clear: left;
+	background-color: #fff;
+	padding: 10px;
+	background-image: url(../images/cmsbg.png);
+}
+
+.DataObjectManager-popup,.DataObjectManager-popup form {
+	margin: 0;	
+}
+
+ul.tabstrip {
+	float: left;
+	margin: 0;
+	height: 26px;
+	padding-left: 10px;	
+	background-color: #fff;
+	padding-top: 3px;
+}
+
+
+#right ul.tabstrip {
+	height: 29px;
+	background: none;
+	padding-top: 10px;
+}
+
+#right .tab ul.tabstrip {
+	width: 100%;
+	
+}
+
+ul.tabstrip li {
+	list-style: none;
+	float: left;
+	padding: 0 0 0 9px;
+	cursor: pointer;
+	margin-right: 10px;
+	font-size: 12px;
+}
+
+ul.tabstrip li a {
+	display: block;
+	float: left;
+	padding: 7px 9px 7px 0;
+	text-decoration: none;
+	color: #555;
+	outline: none;
+	line-height: 7px;
+}
+
+ul.tabstrip li a:hover {
+	text-decoration: none;
+	color: #000;
+}
+
+ul.tabstrip li.current,
+ul.tabstrip li.ui-tabs-selected,
+ul.tabstrip li.sel,
+ul.tabstrip li.over {
+	top: 1px;
+	background-color: #fff;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
+
+ul.optionset {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.datepicker input,textarea,input.text {
+	border: 1px solid #A7A7A7;
+	padding: 3px;
+	width: 98%;
+}
+
+.field {
+	margin-bottom: 1em;
+}
+
+.Actions {
+	position: relative;
+	bottom: 0px;
+	text-align: right;
+	left: 0px;
+	padding-top: 5px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	width: 98%;
+}
+
+#pagination {
+	width: 130px !important;
+	font-family: "Lucida Grande", Lucida, Verdana, sans-serif;
+}
+
+.Actions input {
+	cursor: pointer;
+	color: #333;
+	font-size: 11px;
+	display: inline-block;
+	padding: 6px;
+	text-decoration: none;
+	font-weight: bold;
+	line-height: 1;
+	position: relative;
+	float: left;
+	cursor: pointer;
+}
+
+.CompositeField{
+	clear: both;
+}
+.delete a img {
+	border: none;	
+}
+.multicolumn .field{
+	float: left;	
+}
+.column5 .field{
+	width: 20%;
+
+}
+.column4 .field{
+	width: 25%;
+}
+.column3 .field{
+	width: 33%;
+}
+.column2 .field{
+	width: 50%;
+}
+
+span.message.validation {
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+.holder-validation{
+	position: relative;
+	background: #ffd0c3;
+}
+.holder-validation input{
+	background: #fff;
+}
